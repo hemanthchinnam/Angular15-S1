@@ -1,11 +1,6 @@
-
-
   <app-customer></app-customer>
 <div class="login-container">
-    <h1 style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="56" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-      </svg>&nbsp;EDIT CUSTOMER</h1>
+    <h1 style="text-align: center;">&nbsp;EDIT CUSTOMER</h1>
     <div *ngIf="message" class="alert alert-success alert-dismissible fade show" role="alert">
         <strong>Form Submitted!</strong> Customer details Updated.!
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -36,49 +31,10 @@
             <input type="text" class="form-control" placeholder="Enter city" formControlName="city">
         </div>
         <div class="mb-3">
-            <label for="state" class="form-label">State</label>
-            <select class="form-select" formControlName="state" placeholder="Select State">
-                <option selected disabled>Select State</option>
-                <option value="Andhra Pradesh">Andhra Pradesh</option>
-                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                <option value="Assam">Assam</option>
-                <option value="Bihar">Bihar</option>
-                <option value="Chhattisgarh">Chhattisgarh</option>
-                <option value="Goa">Goa</option>
-                <option value="Gujarat">Gujarat</option>
-                <option value="Haryana">Haryana</option>
-                <option value="Himachal Pradesh">Himachal Pradesh</option>
-                <option value="Jharkhand">Jharkhand</option>
-                <option value="Karnataka">Karnataka</option>
-                <option value="Kerala">Kerala</option>
-                <option value="Madhya Pradesh">Madhya Pradesh</option>
-                <option value="Maharashtra">Maharashtra</option>
-                <option value="Manipur">Manipur</option>
-                <option value="Meghalaya">Meghalaya</option>
-                <option value="Mizoram">Mizoram</option>
-                <option value="Nagaland">Nagaland</option>
-                <option value="Odisha">Odisha</option>
-                <option value="Punjab">Punjab</option>
-                <option value="Rajasthan">Rajasthan</option>
-                <option value="Sikkim">Sikkim</option>
-                <option value="Tamil Nadu">Tamil Nadu</option>
-                <option value="Telangana">Telangana</option>
-                <option value="Tripura">Tripura</option>
-                <option value="Uttar Pradesh">Uttar Pradesh</option>
-                <option value="Uttarakhand">Uttarakhand</option>
-                <option value="West Bengal">West Bengal</option>
-                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                <option value="Chandigarh">Chandigarh</option>
-                <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
-                <option value="Lakshadweep">Lakshadweep</option>
-                <option value="Delhi">Delhi</option>
-                <option value="Puducherry">Puducherry</option>
-            </select>
+            <label for="stateName" class="form-label">State Name</label>
+            <input type="text" class="form-control" placeholder="Enter state Name" formControlName="stateName">       
         </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
+        
         <button type="submit" class="btn btn-primary" >Submit</button>
     </form>
 </div>

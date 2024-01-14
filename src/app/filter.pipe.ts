@@ -16,7 +16,7 @@ export class FilterPipe implements PipeTransform {
       customer.lastName.toLowerCase().includes(searchText) ||
       customer.address.toLowerCase().includes(searchText) ||
       customer.city.toLowerCase().includes(searchText) ||
-      customer.state.name.toLowerCase().includes(searchText) 
+      customer.stateName.toLowerCase().includes(searchText) 
     );
   }
 }

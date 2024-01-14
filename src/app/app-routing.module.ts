@@ -10,6 +10,7 @@ import { AddcustomerComponent } from './customer/addcustomer/addcustomer.compone
 import { EditcustomerComponent } from './customer/editcustomer/editcustomer.component';
 
 
+
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'home', component: WelcomeComponent },

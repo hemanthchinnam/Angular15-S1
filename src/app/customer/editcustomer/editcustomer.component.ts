@@ -19,7 +19,7 @@ export class EditcustomerComponent implements OnInit {
     gender: new FormControl(),
     address: new FormControl(),
     city: new FormControl(),
-    state: new FormControl(),
+    stateName: new FormControl(),
   });
   message: boolean = false;
   ngOnInit(): void {
@@ -35,7 +35,7 @@ export class EditcustomerComponent implements OnInit {
           gender: result['gender'],
           address: result['address'],
           city: result['city'],
-          state: result['state'],
+          stateName:result['stateName']
         });
       });
   }
@@ -43,7 +43,6 @@ export class EditcustomerComponent implements OnInit {
   UpdateData() {
     // console.log(this.editCustomer.value);
     this.customer.updateCustomerData(this.router.snapshot.params['id'],this.editCustomer.value).subscribe((result)=>{
-      // console.log(result);
       this.message=true;
       this.editCustomer.reset({});
     })
@@ -52,12 +51,5 @@ export class EditcustomerComponent implements OnInit {
     
   }
 
-  // UpdateData() {
-  //   console.log(this.editCustomer.value);
-  //   const customerId = this.router.snapshot.params['id'].toString();
   
-  //   this.customer.updateCustomerData(customerId, this.editCustomer.value).subscribe((result) => {
-  //     console.log(result);
-  //   });
-  // }
 }

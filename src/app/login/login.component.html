@@ -1,37 +1,38 @@
-<form (ngSubmit)="onSubmit()" #loginForm="ngForm" class="my-5 px-3 py-4 bg-light rounded text-center login-container">
-  <h1 style="text-align: center;" >  LOGIN</h1>
-  <div class="form-group">
-    <label for="email" class="form-label">Email:</label>
-    <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Enter email" required
-      [(ngModel)]="email" #emailInput="ngModel">
-    <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)" class="text-danger error-text">
-      <!-- Display an error message if the email is invalid and has been interacted with -->
-      <span *ngIf="emailInput.errors?.['required']">Email is required.</span>
-      <span *ngIf="emailInput.errors?.['email']">Invalid email format.</span>
-    </div>
-  </div>
+<div class="container">
+  <div class="row justify-content-center ">
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm" class="col-md-6 my-custom-form">
+      <h1 style="text-align: center;">LOGIN</h1>
+      <div class="form-group">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Enter email" required
+          [(ngModel)]="email" #emailInput="ngModel">
+        <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)" class="text-danger error-text">
+          <span *ngIf="emailInput.errors?.['required']">Email is required.</span>
+          <span *ngIf="emailInput.errors?.['email']">Invalid email format.</span>
+        </div>
+      </div>
 
-  <div class="form-group">
-    <label for="password" class="form-label">Password:</label>
-    <input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Enter password"
-      required minlength="6" maxlength="10"
-      pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,10}$"
-      [(ngModel)]="password" #passwordInput="ngModel">
-    <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)" class="text-danger error-text">
-      <!-- Display an error message if the password is invalid and has been interacted with -->
-      <span *ngIf="passwordInput.errors?.['required']">Password is required.</span>
-      <span *ngIf="passwordInput.errors?.['minlength'] || passwordInput.errors?.['maxlength']">
-        Password must be between 6 and 10 characters.
-      </span>
-      <span *ngIf="passwordInput.errors?.['pattern']">
-        Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character.
-      </span>
-    </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Enter password"
+          required minlength="6" maxlength="10"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,10}$"
+          [(ngModel)]="password" #passwordInput="ngModel">
+        <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)" class="text-danger error-text">
+          <span *ngIf="passwordInput.errors?.['required']">Password is required.</span>
+          <span *ngIf="passwordInput.errors?.['minlength'] || passwordInput.errors?.['maxlength']">
+            Password must be between 6 and 10 characters.
+          </span>
+          <span *ngIf="passwordInput.errors?.['pattern']">
+            Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character.
+          </span>
+        </div>
+      </div>
+      <br>
+      <button type="submit" [disabled]="loginForm.invalid" class="btn btn-success btn-lg">Login</button>
+      <div *ngIf="isLoggedIn" class="alert alert-success text-center my-3">
+        <strong>Login successful!</strong> Welcome, {{ email }}!
+      </div>
+    </form>
   </div>
-<br>
-  <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary btn-lg">Login</button>
-  <div *ngIf="isLoggedIn" class="alert alert-success text-center my-3">
-    <strong>Login successful!</strong> Welcome, {{ email }}!
-  </div>
-  
-</form>
+</div>

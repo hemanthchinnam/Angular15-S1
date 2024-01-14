@@ -1,9 +1,22 @@
-<div *ngFor="let orderList of ordersList">
-  <h2>Order List ID: {{ orderList.id }}</h2>
-  <ul>
-    <li *ngFor="let order of orderList.orders">
-      <strong>Product Name:</strong> {{ order.productName }} |
-      <strong>Item Cost:</strong> {{ order.itemCost | currency: 'INR':true }}
-    </li>
-  </ul>
+<div class="table-responsive custom-table">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Order List ID</th>
+        <th>Product Name</th>
+        <th>Item Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let orderList of ordersList">
+        <ng-container *ngFor="let order of orderList.orders; let first = first">
+          <tr>
+            <td *ngIf="first" [attr.rowspan]="orderList.orders.length">{{ orderList.id }}</td>
+            <td>{{ order.productName }}</td>
+            <td>{{ order.itemCost | currency: 'USD':true }}</td>
+          </tr>
+        </ng-container>
+      </ng-container>
+    </tbody>
+  </table>
 </div>

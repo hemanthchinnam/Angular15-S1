@@ -9,7 +9,6 @@ import { CustomersService } from 'src/customers.service';
 })
 export class AddcustomerComponent implements OnInit{
 gender: any;
-
   constructor(private customer: CustomersService){}
   addCustomer=new FormGroup({
     firstName:new FormControl( '' ),
@@ -17,7 +16,8 @@ gender: any;
     gender: new FormControl( '' ),
     address:new FormControl( '' ),
     city:new FormControl( '' ),
-    state:new FormControl( '' ),
+    stateName: new FormControl( '' ),
+    
     
 });
 message:boolean=false;

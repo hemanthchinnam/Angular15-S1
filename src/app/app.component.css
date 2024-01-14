@@ -1,12 +1,45 @@
-.navbar-custom {
-    background-color: rgb(58, 97, 255); /* Change this to your desired color */
-    border-color: black; /* Change this to your desired color */  
+.toolbar {
+  position: relative;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
 }
 
-  .navbar-custom .navbar-brand {
-    color: white; 
-  }
+.toolbar img {
+  width: 70px;
+  margin: 0 26px;
+}
 
-  .navbar-custom .navbar-nav > li > a {
-    color: white; 
-  }
+.toolbar span {
+  font-size: 1.8rem;
+}
+
+.toolbar .spacer {
+  flex: 1;
+}
+
+.toolbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 40px;
+  margin: 10px;
+}
+
+.toolbar li {
+  margin-right: 26px;
+}
+
+.toolbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.toolbar a:hover {
+  opacity: 0.8;
+}
