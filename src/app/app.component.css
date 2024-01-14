@@ -1,0 +1,12 @@
+.navbar-custom {
+    background-color: rgb(58, 97, 255); /* Change this to your desired color */
+    border-color: black; /* Change this to your desired color */  
+}
+
+  .navbar-custom .navbar-brand {
+    color: white; 
+  }
+
+  .navbar-custom .navbar-nav > li > a {
+    color: white; 
+  }

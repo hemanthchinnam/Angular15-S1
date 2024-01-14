@@ -1,0 +1,9 @@
+<div *ngFor="let orderList of ordersList">
+  <h2>Order List ID: {{ orderList.id }}</h2>
+  <ul>
+    <li *ngFor="let order of orderList.orders">
+      <strong>Product Name:</strong> {{ order.productName }} |
+      <strong>Item Cost:</strong> {{ order.itemCost | currency: 'USD':true }}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,305 @@
+{
+  "customers": [
+    {
+      "firstName": "Rana",
+      "lastName": "D",
+      "gender": "male",
+      "address": "345 Cedar Point Ave.",
+      "city": "Encinitas ",
+      "state": {
+        "abbreviation": "CA",
+        "name": "California"
+      },
+      "id": "2"
+    },
+    {
+      "firstName": "Selena",
+      "lastName": "Gomez",
+      "gender": "female",
+      "address": "1822 Long Bay Dr.",
+      "city": " Seattle ",
+      "state": {
+        "abbreviation": "WA",
+        "name": "Washington"
+      },
+      "id": "3"
+    },
+    {
+      "firstName": "Kiara",
+      "lastName": "Advani",
+      "gender": "female",
+      "address": "79455 Pinetop Way",
+      "city": "Chandler",
+      "state": {
+        "abbreviation": "AZ",
+        "name": " Arizona "
+      },
+      "orders": [
+        {
+          "productName": "Budgie Smugglers",
+          "itemCost": 19.99
+        },
+        {
+          "productName": "Swimming Cap",
+          "itemCost": 5.49
+        }
+      ],
+      "id": "4"
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Cruise",
+      "gender": "male",
+      "address": "576 Crescent Blvd.",
+      "city": " Dallas",
+      "state": {
+        "abbreviation": "TX",
+        "name": "Texas"
+      },
+      "id": "5"
+    },
+    {
+      "firstName": "Hemanth",
+      "lastName": "Ch",
+      "gender": "male",
+      "address": "9874 Center St.",
+      "city": "Orlando ",
+      "state": {
+        "abbreviation": "FL",
+        "name": "Florida"
+      },
+      "id": "6"
+    },
+    {
+      "firstName": "Teja",
+      "lastName": "Challa",
+      "gender": "female",
+      "address": "9812 Builtway Appt #1",
+      "city": "Carey ",
+      "state": {
+        "abbreviation": "NC",
+        "name": "North Carolina"
+      },
+      "id": "7"
+    },
+    {
+      "firstName": "Ritu",
+      "lastName": "Varma",
+      "gender": "female",
+      "address": "4651 Tuvo St.",
+      "city": "Anaheim",
+      "state": {
+        "abbreviation": "CA",
+        "name": "California"
+      },
+      "id": "8"
+    },
+    {
+      "firstName": "Naveen",
+      "lastName": "Pollishetty",
+      "gender": "male",
+      "address": "66 Ray St.",
+      "city": " Orlando",
+      "state": {
+        "abbreviation": "FL",
+        "name": "Florida"
+      },
+      "id": "9"
+    },
+    {
+      "firstName": "Gautham",
+      "lastName": "Meenon",
+      "gender": "male",
+      "address": "2543 Cassiano",
+      "city": "Rio de Janeiro",
+      "state": {
+        "abbreviation": "WA",
+        "name": "Rio de Janeiro"
+      },
+      "id": "10"
+    },
+    {
+      "id": "5258",
+      "firstName": "k",
+      "lastName": "R",
+      "gender": "Female",
+      "address": "44 Main Street",
+      "city": "Tirupathi",
+      "state": "Andhra Pradesh"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "userId": "2"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1",
+      "userId": "1"
+    }
+  ],
+  "ordersList": [
+    {
+      "orders": [
+        {
+          "productName": "Boomerang",
+          "itemCost": 29.99
+        },
+        {
+          "productName": "Helmet",
+          "itemCost": 19.99
+        },
+        {
+          "productName": "Kangaroo Saddle",
+          "itemCost": 179.99
+        }
+      ],
+      "id": "2b78"
+    },
+    {
+      "orders": [
+        {
+          "productName": "Frisbee",
+          "itemCost": 2.99
+        },
+        {
+          "productName": "Hat",
+          "itemCost": 5.99
+        }
+      ],
+      "id": "26ae"
+    },
+    {
+      "orders": [
+        {
+          "productName": "Bow",
+          "itemCost": 399.99
+        },
+        {
+          "productName": "Arrows",
+          "itemCost": 69.99
+        }
+      ],
+      "id": "f544"
+    },
+    {
+      "orders": [
+        {
+          "productName": "Baseball",
+          "itemCost": 9.99
+        },
+        {
+          "productName": "Bat",
+          "itemCost": 19.99
+        }
+      ],
+      "id": "a759"
+    },
+    {
+      "orders": [
+        {
+          "productName": "Surfboard",
+          "itemCost": 299.99
+        },
+        {
+          "productName": "Wax",
+          "itemCost": 5.99
+        },
+        {
+          "productName": "Shark Repellent",
+          "itemCost": 15.99
+        }
+      ],
+      "id": "c151"
+    },
+    {
+      "orders": [
+        {
+          "productName": "Saddle",
+          "itemCost": 599.99
+        },
+        {
+          "productName": "Riding cap",
+          "itemCost": 79.99
+        }
+      ],
+      "id": "8fce"
+    },
+    {
+      "orders": [
+        {
+          "productName": "Baseball",
+          "itemCost": 9.99
+        },
+        {
+          "productName": "Bat",
+          "itemCost": 19.99
+        }
+      ],
+      "id": "bd12"
+    },
+    {
+      "orders": [
+        {
+          "productName": "Surfboard",
+          "itemCost": 299.99
+        },
+        {
+          "productName": "Wax",
+          "itemCost": 5.99
+        },
+        {
+          "productName": "Shark Repellent",
+          "itemCost": 7.99
+        }
+      ],
+      "id": "a1fe"
+    },
+    {
+      "orders": [
+        {
+          "productName": "Car",
+          "itemCost": 42999.99
+        },
+        {
+          "productName": "Wax",
+          "itemCost": 5.99
+        },
+        {
+          "productName": "Shark Repellent",
+          "itemCost": 7.99
+        }
+      ],
+      "id": "7379"
+    },
+    {
+      "orders": [
+        {
+          "productName": "Baseball",
+          "itemCost": 9.99
+        },
+        {
+          "productName": "Bat",
+          "itemCost": 19.99
+        }
+      ],
+      "id": "3a9d"
+    }
+  ]
+}

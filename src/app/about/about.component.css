@@ -1,0 +1,41 @@
+
+.view {
+    padding: 70px;
+    text-align:center;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 70%;
+    margin: 0 auto;
+    
+  }
+  
+  header {
+    background-color: #1976d2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h3 {
+    margin: 0;
+  }
+  
+  .info-container {
+    margin-top: 20px;
+  }
+  
+  .row {
+    margin-bottom: 10px;
+  }
+  
+  .col-md-2 {
+    font-weight: bold;
+    font-size: larger;
+  }
+  
+  a {
+    color: #1976d2;
+  }
+  

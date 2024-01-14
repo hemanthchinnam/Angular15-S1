@@ -1,0 +1,58 @@
+.panda-bg-info {
+    background-color: #fcf95b;
+}
+
+.btn-buy-now {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 16px;
+    background-image: linear-gradient(to bottom, #1ebfdb 0%, #FF136F 100%);
+    color: #030303;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 20px;
+}
+
+.price {
+    color: #FF136F;
+    margin-top: 20px;
+}
+
+.watch {
+    background-image: linear-gradient(152.07deg, #FF9C35 1.47%, #FFD019 97.17%);
+}
+
+.bag {
+    background-image: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
+}
+
+.shoes {
+    background-image: linear-gradient(170.41deg, #4289FF -10.89%, #3F07F8 92.77%);
+}
+
+.all-categories {
+    background-color: #f4f4f4;
+    padding: 10px 0 20px;
+}
+
+#shoes {
+    margin-top: 30px;
+}
+
+#backpack {
+    margin-top: 60px !important;
+    margin-bottom: 45px;
+}
+
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+.card {
+    background-color:  #44d3c0;
+}

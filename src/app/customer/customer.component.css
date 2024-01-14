@@ -1,0 +1,19 @@
+
+.customers {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .customers div {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .customers div:hover {
+    background-color: #f0f0f0;
+  }
+  
