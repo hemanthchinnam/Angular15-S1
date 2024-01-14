@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomersService } from '../../../customers.service';
 import { FilterPipe } from 'src/app/filter.pipe';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-customerlist',
   templateUrl: './customerlist.component.html',
@@ -8,7 +9,6 @@ import { FilterPipe } from 'src/app/filter.pipe';
   providers: [FilterPipe],
 })
 export class CustomerlistComponent implements OnInit {
-  viewOrders: any;
   customersData: any = [];
   pagedCustomers: any[] = [];
   pageSize: number = 5;
@@ -16,7 +16,8 @@ export class CustomerlistComponent implements OnInit {
   searchText:string = '';
   constructor(
     private customers: CustomersService,
-    private FilterPipe: FilterPipe
+    private FilterPipe: FilterPipe,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -37,6 +38,10 @@ export class CustomerlistComponent implements OnInit {
         alert("Deletion canceled.");
       }
     });
+  }
+  viewOrders(orders: any): void {
+    // Navigate to the order page with orders data
+    this.router.navigate(['/orders/:id'], { state: { orders: orders } });
   }
 
   updatePageData(): void {

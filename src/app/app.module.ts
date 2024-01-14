@@ -8,11 +8,10 @@ import { OrdersComponent } from './orders/orders.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CustomercardComponent } from './customer/customercard/customercard.component';
 import { CustomerlistComponent } from './customer/customerlist/customerlist.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { NgModel, FormsModule } from '@angular/forms';
+import {  FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AddcustomerComponent } from './customer/addcustomer/addcustomer.component';
 import { EditcustomerComponent } from './customer/editcustomer/editcustomer.component';
@@ -26,7 +25,6 @@ import { FilterPipe } from './filter.pipe';
     OrdersComponent,
     AboutComponent,
     LoginComponent,
-    CustomercardComponent,
     CustomerlistComponent,
     AddcustomerComponent,
     EditcustomerComponent,

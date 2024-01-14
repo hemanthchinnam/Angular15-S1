@@ -1,18 +1,16 @@
 <app-customer></app-customer>
-<h1 style="text-align: center;">Customers ListView!</h1>
+<h1>Customers View!</h1>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Information</title>
   </head>
   <body>
     <input type="text" [(ngModel)]="searchText" placeholder="Search...">
     <table class="table" id="userTable">
       <thead>
         <tr>
-          <th scope="col">ID</th>
           <th scope="col">First Name</th>
           <th scope="col">Last Name</th>
           <th scope="col">Gender</th>
@@ -25,7 +23,6 @@
       </thead>
       <tbody>
         <tr *ngFor="let item of getPaginatedCustomers() | filter: searchText">
-          <td scope="row">{{ item.id }}</td>
           <td>{{ item.firstName }}</td>
           <td>{{ item.lastName }}</td>
           <td>{{ item.gender }}</td>

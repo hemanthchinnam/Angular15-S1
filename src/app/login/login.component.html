@@ -1,8 +1,5 @@
 <form (ngSubmit)="onSubmit()" #loginForm="ngForm" class="my-5 px-3 py-4 bg-light rounded text-center login-container">
-  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="RED" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
-    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
-  </svg><h1 style="text-align: center;" >  LOGIN</h1>
+  <h1 style="text-align: center;" >  LOGIN</h1>
   <div class="form-group">
     <label for="email" class="form-label">Email:</label>
     <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Enter email" required
@@ -32,10 +29,7 @@
     </div>
   </div>
 <br>
-  <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-send-check-fill" viewBox="0 0 16 16">
-    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 1.59 2.498C8 14 8 13 8 12.5a4.5 4.5 0 0 1 5.026-4.47zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
-    <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"/>
-  </svg>Login</button>
+  <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary btn-lg">Login</button>
   <div *ngIf="isLoggedIn" class="alert alert-success text-center my-3">
     <strong>Login successful!</strong> Welcome, {{ email }}!
   </div>

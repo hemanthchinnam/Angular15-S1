@@ -3,7 +3,7 @@
   <ul>
     <li *ngFor="let order of orderList.orders">
       <strong>Product Name:</strong> {{ order.productName }} |
-      <strong>Item Cost:</strong> {{ order.itemCost | currency: 'USD':true }}
+      <strong>Item Cost:</strong> {{ order.itemCost | currency: 'INR':true }}
     </li>
   </ul>
 </div>
